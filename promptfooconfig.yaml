@@ -11,7 +11,7 @@ defaultTest:
     provider:
       id: openai:chat:gemma
       config:
-        apiBaseUrl: http://169.254.1.2:8081/v1
+        apiBaseUrl: http://localhost:8081/v1
         apiKey: dummy
 
 tests:
@@ -19,5 +19,11 @@ tests:
     vars:
       question: "What's my color?"
     assert:
+      - type: icontains
+        value: "blue is my color"
+  - description: Factual recall in source, judged
+    vars:
+      question: "What's my color?"
+    assert:
       - type: llm-rubric
-        value: "Identifies blue ain't my color."
+        value: "correctly identifies blue is my color"

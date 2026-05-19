@@ -1,2 +1,14 @@
 [tools]
 node = "26"
+
+[tasks.install]
+description = "Install npm packages"
+run = "npm install"
+
+[tasks.eval]
+description = "Run promptfoo evals"
+run = "npx promptfoo eval"
+
+[tasks.view]
+description = "View promptfoo results"
+run = "npx promptfoo view"
