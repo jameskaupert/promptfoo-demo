@@ -15,3 +15,9 @@ defaultTest:
         apiKey: dummy
 
 tests:
+  - description: Factual recall in source
+    vars:
+      question: "What's my color?"
+    assert:
+      - type: llm-rubric
+        value: "Identifies blue ain't my color."
