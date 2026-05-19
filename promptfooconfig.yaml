@@ -1,0 +1,17 @@
+description: Demo RAG-simulation eval suite
+
+providers:
+  - id: file://./rag-simulation/rag-provider.ts
+
+prompts:
+  - "{{question}}"
+
+defaultTest:
+  options:
+    provider:
+      id: openai:chat:gemma
+      config:
+        apiBaseUrl: http://169.254.1.2:8081/v1
+        apiKey: dummy
+
+tests:
