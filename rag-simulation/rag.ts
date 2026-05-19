@@ -3,7 +3,7 @@
 // considerations and pitfalls for the sake of demo
 import { readFileSync } from "node:fs";
 
-const COMPLETIONS_URL= process.env.COMPLETIONS_URL || "http://host.containers.internal:8081/v1/chat/completions"
+const COMPLETIONS_URL= process.env.COMPLETIONS_URL || "http://localhost:8081/v1/chat/completions"
 const TEMPURATURE = process.env.TEMPURATURE || 0
 
 const doc = readFileSync("./sources/story.md", "utf-8");
