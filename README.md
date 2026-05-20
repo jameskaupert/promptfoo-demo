@@ -29,7 +29,7 @@ mise run view
 ```
 
 ### Sample results
-The image below showcases a situation where the eval failed because the model latched on to one description, but missed a previous piece of the description of the fictitious "minsc" from two paragraphs earlier.
+The image below showcases a situation where the eval failed because the model latched on to one description, but missed a previous piece of the description of the fictitious "minsc" from two paragraphs earlier. This is a case where the eval as written should have passed but a false failure is instead seen, likely because the judge model did not correctly identify that the combined descriptions should have been considered.
 
 ![Failing LLM Judge](images/failing-llm-judge.png)
 
