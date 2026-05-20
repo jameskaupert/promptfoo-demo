@@ -1,6 +1,12 @@
 # promptfoo-demo
 Playground for promptfoo evals. Simulates RAG retrieval by stuffing a local file's contents into context, then uses promptfoo to run various evals.
 
+An AI-generated story in the style of a TTRPG adventure serves as the document to retrieve details from. This serves as an example of synthetic data, in this case to avoid licensing issues, but in the real world could also be to avoid exposing real customer data, PII, proprietary info, etc...
+
+This approach was chosen to showcase who promptfoo evals detect a model's ability to:
+1. find correct, story-specific information
+2. avoid returning generic fantasy information (including a couple of intentionally inserted red herrings in the story)
+
 ## Installation
 Install node
 ```
