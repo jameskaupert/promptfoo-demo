@@ -21,7 +21,6 @@ mise run eval
 ```
 mise run view
 ```
-```
 
 ## Running llama.cpp locally
 I use this command to start Gemma4 locally on my system:
