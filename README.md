@@ -28,6 +28,9 @@ mise run eval
 mise run view
 ```
 
+### Sample results
+![Failing LLM Judge](images/failing-llm-judge.png)
+
 ## Running llama.cpp locally
 I use this command to start Gemma4 locally on my system:
 ```
