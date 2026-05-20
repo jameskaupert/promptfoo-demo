@@ -1,0 +1,18 @@
+{
+  "name": "promptfoo-demo",
+  "version": "1.0.0",
+  "description": "Playground for promptfoo evals",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jameskaupert/promptfoo-demo.git"
+  },
+  "keywords": [],
+  "author": "James Kaupert",
+  "license": "MIT",
+  "homepage": "https://github.com/jameskaupert/promptfoo-demo#readme",
+  "type": "module",
+  "devDependencies": {
+    "promptfoo": "0.121.9",
+    "tsx": "4.22.3"
+  }
+}

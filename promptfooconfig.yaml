@@ -1,0 +1,29 @@
+description: Demo RAG-simulation eval suite
+
+providers:
+  - id: file://./rag-simulation/rag-provider.ts
+
+prompts:
+  - "{{question}}"
+
+defaultTest:
+  options:
+    provider:
+      id: openai:chat:gemma
+      config:
+        apiBaseUrl: http://localhost:8081/v1
+        apiKey: dummy
+
+tests:
+  - description: Factual recall in source
+    vars:
+      question: "What's my color?"
+    assert:
+      - type: icontains
+        value: "blue is my color"
+  - description: Factual recall in source, judged
+    vars:
+      question: "What's my color?"
+    assert:
+      - type: llm-rubric
+        value: "correctly identifies blue is my color"
