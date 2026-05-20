@@ -22,18 +22,9 @@ mise run eval
 mise run view
 ```
 ```
-```
-```
-```
-```
-```
-```
-```
 
 ## Running llama.cpp locally
 I use this command to start Gemma4 locally on my system:
 ```
 llama-server -hf unsloth/gemma-4-E4B-it-GGUF:Q4_K_M --host 0.0.0.0 --port 8081 --n-gpu-layers 99 --reasoning-budget 0 --chat-template-kwargs '{"enable_thinking":false}'
-```
-```
 ```
