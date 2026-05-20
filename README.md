@@ -29,6 +29,8 @@ mise run view
 ```
 
 ### Sample results
+The image below showcases a situation where the eval failed because the model latched on to one description, but missed a previous piece of the description of the fictitious "minsc" from two paragraphs earlier.
+
 ![Failing LLM Judge](images/failing-llm-judge.png)
 
 ## Running llama.cpp locally
